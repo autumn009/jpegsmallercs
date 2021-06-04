@@ -127,5 +127,12 @@ namespace JpegSmallerCS
             resizeImageWhileMaintainingAspectRatio(System.Drawing.Imaging.ImageFormat.Jpeg);
             Cursor = Cursors.Default;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var startInfo = new System.Diagnostics.ProcessStartInfo(textBoxOutpurDir.Text);
+            startInfo.UseShellExecute = true;
+            System.Diagnostics.Process.Start(startInfo);
+        }
     }
 }

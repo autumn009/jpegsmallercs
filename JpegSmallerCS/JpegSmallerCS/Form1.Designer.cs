@@ -42,6 +42,7 @@ namespace JpegSmallerCS
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxOutputFileNameHeader = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -153,7 +154,7 @@ namespace JpegSmallerCS
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(201, 88);
+            this.label5.Location = new System.Drawing.Point(145, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 15);
             this.label5.TabIndex = 11;
@@ -161,16 +162,27 @@ namespace JpegSmallerCS
             // 
             // textBoxOutputFileNameHeader
             // 
-            this.textBoxOutputFileNameHeader.Location = new System.Drawing.Point(201, 107);
+            this.textBoxOutputFileNameHeader.Location = new System.Drawing.Point(145, 106);
             this.textBoxOutputFileNameHeader.Name = "textBoxOutputFileNameHeader";
             this.textBoxOutputFileNameHeader.Size = new System.Drawing.Size(100, 23);
             this.textBoxOutputFileNameHeader.TabIndex = 12;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(307, 88);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(105, 23);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "Open Output &Dir";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 182);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.textBoxOutputFileNameHeader);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -208,6 +220,7 @@ namespace JpegSmallerCS
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxOutputFileNameHeader;
+        private System.Windows.Forms.Button button5;
     }
 }
 
