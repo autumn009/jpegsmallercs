@@ -55,5 +55,17 @@ namespace JpegSmallerCS
             textBoxOutpurDir.Text = JpegSmallerCS.Properties.Settings.Default.OutputDir;
             textBoxSmallerTo.Text = JpegSmallerCS.Properties.Settings.Default.SmallerTo;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var dirDialog = new FolderBrowserDialog();
+            dirDialog.SelectedPath = textBoxOutpurDir.Text;
+            DialogResult result = dirDialog.ShowDialog();
+            // OK button was pressed.
+            if (result == DialogResult.OK)
+            {
+                textBoxOutpurDir.Text = dirDialog.SelectedPath;
+            }
+        }
     }
 }
